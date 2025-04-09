@@ -25,11 +25,11 @@ Frontend Code con ideas geniales: https://codepen.io/
 	color-scheme: light dark;
 
 	/* Colors */
-	--primary-color: light-dark(#111, #ffffffcc);
-	--secondary-color: #ea4959;
+	--primary-color: light-dark(#111111, #ffffffcc);
+	--secondary-color: #dfb016;
 	--bg-color-section1: light-dark(#eee, #111);
-	--bg-color-section2: light-dark(#fafafa, #6a6a6a);
-	--bg-color-buttons: light-dark(#e0e0e0, #6a6a6a);
+	--bg-color-section2: light-dark(#fafafa, #000000);
+	--bg-color-buttons: light-dark(#e0e0e0, #000000);
 
 	/* Header */
 	--header-height: 60px;
@@ -70,6 +70,21 @@ html {
 		font-size: var(--normal-font-size);
 		margin: 0;
 		color: var(--primary-color);
+	}
+
+	.home__title {
+		font-family: 'Bangers', sans-serif;
+		font-size: 6rem;
+	}
+
+	.navbar__menu,
+	.navbar__link {
+		font-family: 'Bangers', sans-serif;
+	}
+
+	.section__title {
+		font-family: 'Bangers', sans-serif;
+		font-size: 4rem;
 	}
 
 	ul {
@@ -517,7 +532,7 @@ html {
 
 /* ============= About ============= */
 .about {
-	background-color: var(--bg-color-section2);
+	background-color: rgb(69, 69, 255);
 	overflow: hidden;
 	.about__container {
 		.about__description {
@@ -558,7 +573,7 @@ html {
 				width: 100%;
 
 				.skills__cards-container {
-					background-color: var(--primary-color);
+					background-color: rgb(226, 67, 67);
 					height: 100px;
 					padding: 20px;
 					border-radius: 1rem;
@@ -609,7 +624,7 @@ html {
 				padding: 0.75rem 1.5rem;
 				font-weight: var(--font-semi-bold);
 				font-size: var(--small-font-size);
-				background-color: var(--primary-color);
+				background-color: rgb(69, 69, 255);
 				color: var(--bg-color-section2);
 				border-radius: 5px;
 			}
@@ -619,7 +634,7 @@ html {
 
 /* ============= Projects ============= */
 .projects {
-	background-color: var(--bg-color-section2);
+	background-color: rgb(226, 67, 67);
 	.projects__container {
 		gap: 2rem;
 		.projects__inner {
@@ -650,6 +665,20 @@ html {
 				}
 			}
 		}
+	}
+	.projects__button {
+		background-color: rgb(69, 69, 255);
+		color: #fff;
+		border: none;
+		padding: 10px 20px;
+		border-radius: 8px;
+		cursor: pointer;
+		font-weight: 600;
+		transition: background-color 0.3s ease;
+	}
+
+	.projects__button:hover {
+		background-color: #000000;
 	}
 }
 
@@ -722,7 +751,7 @@ html {
 
 /* ============= Footer ============= */
 .footer {
-	background-color: #111;
+	background-color: rgb(69, 69, 255);
 	color: #efefef;
 	padding-bottom: 2rem;
 	.footer__container {
