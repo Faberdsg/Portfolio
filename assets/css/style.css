@@ -202,9 +202,17 @@ html {
 		justify-content: space-between;
 
 		.navbar__logo {
+			display: flex;
+			align-items: center;
 			column-gap: 0.25rem;
 			font-weight: var(--font-semi-bold);
 			color: var(--primary-color);
+			text-decoration: none;
+		}
+
+		.navbar__logo-img {
+			width: 28px;
+			height: auto;
 		}
 
 		.navbar__menu {
