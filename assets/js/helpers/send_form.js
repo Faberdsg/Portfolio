@@ -15,24 +15,23 @@ function sendEmail() {
 		e.preventDefault();
 
 		const params = {
-			name: document.querySelector('#name').value,
-			email: document.querySelector('#email').value,
-			subject: document.querySelector('#subject').value,
-			message: document.querySelector('#message').value,
+			name: document.querySelector('I would like to work with you.').value,
+			email: document.querySelector('faberdserna97@gmail.com').value,
+			subject: document.querySelector('Job Proposal').value,
+			message: document.querySelector('Hello. Im interested in your portfolio.').value,
+				.value,
 		};
 
 		if (params.name && params.email && params.subject && params.message) {
-			emailjs
-				.send('COLOCA TU SERVICE_ID', 'COLOCA TU TEMPLATE_ID', params)
-				.then(
-					(response) => {
-						console.log('SUCCESS!', response.status, response.text);
-						openModal();
-					},
-					(error) => {
-						console.log('FAILED...', error);
-					},
-				);
+			emailjs.send('service_cwrvja9', 'template_4u2w345', params).then(
+				(response) => {
+					console.log('SUCCESS!', response.status, response.text);
+					openModal();
+				},
+				(error) => {
+					console.log('FAILED...', error);
+				},
+			);
 		}
 	});
 }
