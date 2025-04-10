@@ -22,7 +22,7 @@ function sendEmail() {
 		};
 
 		if (params.name && params.email && params.subject && params.message) {
-			emailjs.send('service_cwrvja9', 'COLOCA TU TEMPLATE_ID', params).then(
+			emailjs.send('service_cwrvja9', 'template_jn2yscu', params).then(
 				(response) => {
 					console.log('SUCCESS!', response.status, response.text);
 					openModal();
