@@ -15,11 +15,12 @@ function sendEmail() {
 		e.preventDefault();
 
 		const params = {
-			name: document.querySelector('I would like to work with you.').value,
-			email: document.querySelector('faberdserna97@gmail.com').value,
-			subject: document.querySelector('Job Proposal').value,
-			message: document.querySelector('Hello. Im interested in your portfolio.').value,
-				.value,
+			name: document.querySelector('#name').value,
+			email: document.querySelector('#email').value,
+			subject: document.querySelector('#subject').value,
+			message: document.querySelector('#message').value,
+		};
+		
 		};
 
 		if (params.name && params.email && params.subject && params.message) {
