@@ -20,11 +20,9 @@ function sendEmail() {
 			subject: document.querySelector('#subject').value,
 			message: document.querySelector('#message').value,
 		};
-		
-		};
 
 		if (params.name && params.email && params.subject && params.message) {
-			emailjs.send('service_cwrvja9', 'template_4u2w345', params).then(
+			emailjs.send('service_cwrvja9', 'COLOCA TU TEMPLATE_ID', params).then(
 				(response) => {
 					console.log('SUCCESS!', response.status, response.text);
 					openModal();
