@@ -11,3 +11,25 @@ resetToHome();
 parallax();
 activeMenu();
 sendEmail();
+
+const languageToggle = document.querySelector('#language-toggle');
+
+if (languageToggle) {
+	languageToggle.addEventListener('change', () => {
+		const currentPath = window.location.pathname;
+
+		if (languageToggle.checked) {
+			if (!currentPath.includes('index_en.html')) {
+				window.location.href = 'index_en.html';
+			}
+		} else {
+			if (!currentPath.includes('index.html')) {
+				window.location.href = 'index.html';
+			}
+		}
+	});
+
+	if (window.location.pathname.includes('index_en.html')) {
+		languageToggle.checked = true;
+	}
+}
